@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "~source-sans-pro/source-sans-pro.css";
+// @import "~material-design-icons/iconfont/material-icons.css";
+// @import "~@angular/material/theming";
+// @import "~font-awesome/css/font-awesome.min.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+ 

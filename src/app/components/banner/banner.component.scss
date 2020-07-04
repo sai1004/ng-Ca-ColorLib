@@ -1,0 +1,42 @@
+
+
+.bg-img {
+  background: url(../../../assets//welcome-bg.png);
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+}
+
+.content {
+  padding: 10px;
+}
+.content {
+  transform: translateY(35%);
+}
+
+.content h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  line-height: 100px;
+  padding-bottom: 6px;
+}
+
+.content p {
+  color: white;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  padding-bottom: 6px;
+}
+
+.bg-mobile {
+  transform: translateY(35%);
+}
+
+.mobile {
+  max-height: 800px;
+  transform: translateX(22%);
+}
