@@ -4,8 +4,7 @@ import { WelcomePageComponent } from './welcome-page.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { SharedModule } from 'src/app/shared/shared.module';
-import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from 'src/app/shared/shared.module'; 
 
 const routes: Routes = [{ path: '', component: WelcomePageComponent }];
 
@@ -16,8 +15,7 @@ const routes: Routes = [{ path: '', component: WelcomePageComponent }];
     RouterModule.forChild(routes),
     ComponentsModule,
     FlexLayoutModule,
-    SharedModule,
-    MatButtonModule,
+    SharedModule, 
   ],
 })
 export class WelcomePageModule {}

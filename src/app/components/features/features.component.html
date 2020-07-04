@@ -1,1 +1,27 @@
-<p>features works!</p>
+<section fxLayoutAlign="center">
+    <div>
+        <div class="content" Align="center">
+            <h2>Awesome Features</h2>
+            <div class="under-line"></div>
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center center">
+            <ng-container *ngFor="let item of data">
+                <div fxFlex.xl="33.333" fxFlex.lg="33.333" fxFlex.md="50" fxFlex.sm="100" fxFlex.xs="100">
+                    <div class="rectangle"> 
+                        <div fxLayout="row">
+                            <div class="icon-part">
+                                <img src="{{ item.icon }}" alt="icons" class="icons" />
+                            </div>
+
+                            <div class="content-side">
+                                <h4>{{ item.title }}</h4>
+                            </div>
+                        </div>
+                        <p [innerHTML]="item.description"></p>
+                    </div> 
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

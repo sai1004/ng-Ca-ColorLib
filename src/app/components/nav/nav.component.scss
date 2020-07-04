@@ -1,0 +1,20 @@
+mat-toolbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+//   box-shadow: 0px 1px 1px 1px rgba(209, 204, 204, 0.5);
+}
+
+.logo {
+  margin: 5px;
+  margin-top: 10px;
+}
+
+.icons {
+  margin-top: 6px;
+}
+
+mat-icon {
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.card {
+  height: 250px;
+  width: 320px;
+  border-radius: 30px;
+  border: 1px solid gainsboro;
+  border-bottom-left-radius: 0px !important;
+  margin: 10px;
+}
+
+.card-body {
+  padding: 30px;
+
+  h4 {
+    font-size: 20px;
+    padding: 6px !important;
+    color: #5b32b4;
+    line-height: 34px;
+  }
+  p {
+    color: grey;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.mat-icon {
+  font-size: 50px;
+  text-align: center;
+  margin-right: 16px;
+}

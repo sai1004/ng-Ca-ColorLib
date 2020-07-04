@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 import { BannerComponent } from './banner/banner.component';
 import { SpecialCardsComponent } from './special-cards/special-cards.component';
@@ -32,7 +33,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactUsComponent,
     FooterComponent,
   ],
-  imports: [CommonModule, FlexLayoutModule],
+  imports: [CommonModule, FlexLayoutModule, SharedModule],
   exports: [
     BannerComponent,
     SpecialCardsComponent,
@@ -47,6 +48,7 @@ import { FooterComponent } from './footer/footer.component';
     TeamComponent,
     ContactUsComponent,
     FooterComponent,
+    SharedModule,
   ],
 })
-export class ComponentsModule {}
+export class ComponentsModule { }

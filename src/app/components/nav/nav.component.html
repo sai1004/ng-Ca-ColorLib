@@ -1,1 +1,6 @@
-<p>nav works!</p>
+<div fxHide.lt-md class="screen">
+    <ng-container *ngFor="let link of menus">
+        <button mat-button routerLink="/{{ link.name }}">{{ link.name | titlecase }}</button>
+    </ng-container>
+    <button mat-button routerLink="/auth" class="sign-up">Sign Up Free</button>
+</div>

@@ -1,4 +1,45 @@
+<mat-sidenav-container>
 
-<app-nav></app-nav>
-<button mat-raised-button color="primary">Primary</button>
-<router-outlet></router-outlet>
+    <mat-sidenav #sidenav role="navigation">
+
+        <mat-nav-list>
+            <mat-list-item *ngFor="let link of menus">
+
+                <a matLine routerLink="/{{ link.name }}">
+                    <button mat-icon-button>
+                        <mat-icon>{{ link.icon }}</mat-icon>
+                    </button>
+                    {{ link.name | titlecase }}
+                </a>
+                <mat-divider></mat-divider>
+
+            </mat-list-item>
+        </mat-nav-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+        <mat-toolbar color="accent">
+
+            <div class="app-name" style="cursor:pointer; width: 100px;">
+                <h1 class="logo"> Ca. </h1>
+            </div>
+
+            <span class="mat-spacer"></span>
+
+            <app-nav [menus]="menus"></app-nav>
+
+            <div fxHide.gt-sm>
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+
+        </mat-toolbar>
+
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

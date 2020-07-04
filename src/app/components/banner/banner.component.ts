@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class BannerComponent implements OnInit {
   imgUrl: string = '../../../assets/welcome-img.png';
 
-  constructor() {}
+  email: string;
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+
+  onSubmit() {
+    console.log(this.email)
+  }
 }
