@@ -1,8 +1,30 @@
 <section fxLayoutAlign="center">
     <div>
         <div class="content" Align="center">
-            <h2>Our Team  </h2>
+            <h2>Our Team </h2>
             <div class="under-line"></div>
+        </div>
+
+        <div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center">
+                <ng-container *ngFor='let item of data'>
+
+                    <div fxFlex.xl="25" fxFlex.lg="25" fxFlex.md="50" fxFlex.sm="100" fxFlex.xs="100">
+
+                        <div class="card">
+                            <div>
+                                <img [src]="item.img" alt="img" height="200px">
+                            </div>
+                            <div>
+                                <h4> {{ item.name }} </h4>
+                                <p> {{ item.designation }} </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </ng-container>
+            </div>
         </div>
     </div>
 </section>

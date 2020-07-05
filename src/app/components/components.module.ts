@@ -1,7 +1,11 @@
+/* ------------------ Modules ---------------- */
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from 'src/app/shared/shared.module';
+
+/* ------------------ Components ---------------- */
 
 import { BannerComponent } from './banner/banner.component';
 import { SpecialCardsComponent } from './special-cards/special-cards.component';
@@ -51,4 +55,4 @@ import { FooterComponent } from './footer/footer.component';
     SharedModule,
   ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

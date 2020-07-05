@@ -1,1 +1,55 @@
-<p>contact-us works!</p>
+<section fxLayoutAlign="center">
+    <div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center center">
+
+            <div class="text-content">
+                <h2> Get in touch with us! </h2>
+
+                <p> We'll send you epic weekly blogs, whitepapers and things to make your app <br>
+                    startup thrive, all FREE!
+                </p>
+
+                <p> Address: <span>40 Baria Sreet 133/2 NewYork City, US </span> </p>
+                <p> Phone: <span> +11-225-888-888-66 </span> </p>
+                <p> Email: <span> info.deercreative@gmail.com </span> </p>
+
+            </div>
+
+            <div class="form-data">
+
+                <form #contactForm='ngForm' novalidate autocomplete="off">
+
+                    <div>
+                        <mat-form-field color="accent">
+                            <input matInput type="text" name="name" placeholder="Name" [(ngModel)]="contact.name"
+                                required>
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field color="accent">
+                            <input matInput type="text" name="email" placeholder="Email" [(ngModel)]="contact.email"
+                                required>
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field color="accent">
+                            <textarea matInput type="text" name="message" placeholder="Message"
+                                [(ngModel)]="contact.message" required>
+                            </textarea>
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <button mat-raised-button color="accent" [disabled]="!contactForm.valid" (click)="onSend()">
+                            Send Now </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
