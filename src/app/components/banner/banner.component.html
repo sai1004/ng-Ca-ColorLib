@@ -3,13 +3,31 @@
     <div class="content">
       <h1>Colorlib app</h1>
       <p>Everything You Need. To Start Selling Online Beautifully</p>
-      <mat-form-field color="accent">
-        <input matInput placeholder="Email" name="email" [(ngModel)]="email" required />
+
+      <mat-form-field color="primary" appearance="outline">
+        <mat-label> Email </mat-label>
+        <input
+          matInput
+          type="text"
+          name="email"
+          placeholder="Email"
+          [(ngModel)]="email"
+          #Email="ngModel"
+          required
+        />
+        <mat-hint color="warn" *ngIf="Email.touched && !Email.valid">
+          required
+        </mat-hint>
       </mat-form-field>
-      <button mat-raised-button color="accent" (click)="onSubmit()">Get Strated</button>
+
+      <button mat-raised-button color="accent" (click)="onSubmit()">
+        Get Strated
+      </button>
     </div>
-    <div class="bg-mobile">
-      <img class="mobile" [src]="imgUrl" />
+    <div>
+      <div class="bg-mobile">
+        <img class="mobile" [src]="imgUrl" />
+      </div>
     </div>
   </div>
 </div>

@@ -4,5 +4,34 @@
             <h2> Pricing Plan </h2>
             <div class="under-line"></div>
         </div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+
+            <ng-container *ngFor="let item of data">
+
+                <div class="card" Align="center">
+                    <div class="header">
+                        <h4> {{ item.title | titlecase }} </h4>
+                        <h1> {{ item.price | currency:'INR'}} </h1>
+                    </div>
+                    <mat-divider></mat-divider>
+
+                    <mat-list>
+                        <mat-list-item *ngFor="let listItem of item.list">
+                            <p> {{ listItem }} </p>
+                            <mat-divider></mat-divider>
+                        </mat-list-item>
+                    </mat-list>
+
+                    <div class="select-plan">
+                        <p> Select Plan</p>
+                    </div>
+                </div>
+
+            </ng-container>
+
+        </div>
+
     </div>
+
 </section>

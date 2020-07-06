@@ -1,10 +1,11 @@
-<section fxLayoutAlign="center">
-    <div>
+<section>
+    <div class="max-width">
 
-        <div fxLayout="row wrap" fxLayoutAlign="center center">
+        <div fxLayout="row wrap" fxLayoutAlign="space-around">
 
             <div class="text-content">
                 <h2> Get in touch with us! </h2>
+                <div class="under-line"></div>
 
                 <p> We'll send you epic weekly blogs, whitepapers and things to make your app <br>
                     startup thrive, all FREE!
@@ -20,33 +21,58 @@
 
                 <form #contactForm='ngForm' novalidate autocomplete="off">
 
-                    <div>
-                        <mat-form-field color="accent">
-                            <input matInput type="text" name="name" placeholder="Name" [(ngModel)]="contact.name"
+                    <div fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+
+                        <div fxFlex="100" fxFlex.sm="90" fxFlex.xs="90">
+                            <mat-form-field color="primary" appearance="outline">
+                                <mat-label> Name </mat-label>
+                                <input matInput 
+                                type="text" name="name" 
+                                placeholder="Name" 
+                                [(ngModel)]="contact.name"
+                                #contactName="ngModel"
                                 required>
-                        </mat-form-field>
-                    </div>
+                                <mat-hint  color="warn"  *ngIf="contactName.touched && !contactName.valid"> required </mat-hint>
+                            </mat-form-field>
+                        </div>
 
-                    <div>
-                        <mat-form-field color="accent">
-                            <input matInput type="text" name="email" placeholder="Email" [(ngModel)]="contact.email"
+                        <div fxFlex="100" fxFlex.sm="90" fxFlex.xs="90">
+                            <mat-form-field color="primary" appearance="outline">
+                                <mat-label> Email </mat-label>
+                                <input matInput
+                                type="text" 
+                                name="email" 
+                                placeholder="Email" 
+                                [(ngModel)]="contact.email"
+                                #contactEmail="ngModel"
                                 required>
-                        </mat-form-field>
-                    </div>
+                                <mat-hint color="warn" *ngIf="contactEmail.touched && !contactEmail.valid"> required </mat-hint>
+                            </mat-form-field>
+                        </div>
 
+                        <div fxFlex="100" fxFlex.sm="90" fxFlex.xs="90">
+                            <mat-form-field color="primary" appearance="outline">
+                                <mat-label> Message </mat-label>
+                                <textarea matInput 
+                                type="text" 
+                                name="message" 
+                                placeholder="Message"
+                                [(ngModel)]="contact.message" 
+                                #contactMessage="ngModel"
+                                required>
+                                </textarea>
+                                <mat-hint color="accent" *ngIf="contactMessage.touched && !contactMessage.valid"> required </mat-hint>
+                            </mat-form-field>
+                        </div>
+                    </div>
                     <div>
-                        <mat-form-field color="accent">
-                            <textarea matInput type="text" name="message" placeholder="Message"
-                                [(ngModel)]="contact.message" required>
-                            </textarea>
-                        </mat-form-field>
+                        <button mat-raised-button 
+                        color="accent" 
+                        [disabled]="!contactForm.valid" 
+                        (click)="onSend()">
+                        Send Now 
+                        </button>
                     </div>
-
-                    <div>
-                        <button mat-raised-button color="accent" [disabled]="!contactForm.valid" (click)="onSend()">
-                            Send Now </button>
-                    </div>
-
                 </form>
 
             </div>
