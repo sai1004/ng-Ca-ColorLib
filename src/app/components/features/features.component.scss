@@ -1,4 +1,17 @@
-.rectangle { 
-  padding: 10px; 
+.rectangle {
+  padding: 10px;
+  p {
+    line-height: 25px;
+  }
 }
- 
+.icons {
+  height: 40px;
+  padding-right: 16px;
+}
+
+.content-side {
+  h4 {
+    font-size: large;
+    margin-top: 7px !important;
+  }
+}

@@ -6,43 +6,43 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./features.component.scss'],
 })
 export class FeaturesComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
-  
+  ngOnInit(): void { }
+
   data: any[] = [
     {
-      icon: '',
+      icon: 'identity.svg',
       title: 'Awesome Experience',
       description:
         'Excepteur sint occaecat cupidatat non proident sunt <br/> in culpa qui officia deserunt mollit anim id est laborum. ',
     },
     {
-      icon: '',
+      icon: 'speed.svg',
       title: 'Fast and Simple ',
       description:
         'Excepteur sint occaecat cupidatat non proident sunt <br/> in culpa qui officia deserunt mollit anim id est laborum. ',
     },
     {
-      icon: '',
+      icon: 'code.svg',
       title: 'Clean Code ',
       description:
         'Excepteur sint occaecat cupidatat non proident sunt <br/> in culpa qui officia deserunt mollit anim id est laborum. ',
     },
     {
-      icon: '',
+      icon: 'design.svg',
       title: 'Perfect Design ',
       description:
         'Excepteur sint occaecat cupidatat non proident sunt <br/> in culpa qui officia deserunt mollit anim id est laborum. ',
     },
     {
-      icon: '',
-      title: 'Best Industry Leader ',
+      icon: 'corporate.svg',
+      title: 'Best Industry Leader',
       description:
         'Excepteur sint occaecat cupidatat non proident sunt <br/> in culpa qui officia deserunt mollit anim id est laborum. ',
     },
     {
-      icon: '',
+      icon: 'support.svg',
       title: '24/7 Online Support',
       description:
         'Excepteur sint occaecat cupidatat non proident sunt <br/> in culpa qui officia deserunt mollit anim id est laborum. ',
