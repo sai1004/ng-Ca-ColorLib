@@ -1,54 +1,54 @@
 .mobile {
-  height: 420px;
-  width: 500px;
-  margin: 10px;
+    height: 420px;
+    width: 500px;
+    margin: 10px;
 }
 .mobile-img {
-  height: 400px;
+    height: 400px;
 }
 .content {
-  height: 420px;
-  width: 500px;
-  margin: 10px;
+    height: 420px;
+    width: 500px;
+    margin: 10px;
 }
 
 .content h2 {
-  line-height: 55px;
+    line-height: 55px;
 }
 
 .content p {
-  color: grey;
+    color: grey;
 }
 
 .store-btns {
-  height: 60px;
-  width: 200px;
-  border-radius: 30px;
-  border: 1px solid gainsboro;
-  border-bottom-left-radius: 0px !important;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  margin: 10px;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid gainsboro;
+    border-bottom-left-radius: 0px !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    margin: 10px;
 }
 
 .store-btns:hover {
-  background-color: #ff4081;
+    background-color: #ff4081;
 
-  p {
-    color: white;
-  }
+    p {
+        color: white;
+    }
 
-  .icons {
-    color: white;
-  }
+    .icons {
+        color: white;
+    }
 }
 
 .store-btns p {
-  margin-top: 8px;
-  margin-right: 26px;
+    margin-top: 8px;
+    margin-right: 26px;
 }
 
 .icons {
-  float: left;
-  margin-left: 40px;
-  margin-top: 14px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 14px;
 }

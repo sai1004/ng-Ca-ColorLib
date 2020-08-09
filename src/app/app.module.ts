@@ -10,15 +10,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, SignUpComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    SharedModule,
-    FlexLayoutModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent, NavComponent, SignUpComponent],
+    imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, SharedModule, FlexLayoutModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
 export class AppModule {}
